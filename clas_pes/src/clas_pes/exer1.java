@@ -261,6 +261,7 @@ public class exer1 {
 		}
 	}
 
+
 	public static void main(String[] args) {
 		// Gera valores aleatórios para o vetor.
 		Random gerador = new Random();
@@ -282,36 +283,32 @@ public class exer1 {
 		// System.out.println("Vetor 1 desordenado");
 		for (i = 0; i < tv; i++) {
 			vet0[i] = gerador.nextInt(tv);
+			vetA[i] = vet0[i];
 			// System.out.println(" " + vet0[i]);
 		}
 		// System.out.println("Vetor 2 desordenado");
 		for (i = 0; i < tv; i++) {
 			vet1[i] = gerador.nextInt(tv);
+			vetB[i] = vet1[i];
 			// System.out.println(" " + vet1[i]);
 		}
 		// System.out.println("Vetor 3 desordenado");
 		for (i = 0; i < tv; i++) {
 			vet2[i] = gerador.nextInt(tv);
+			vetC[i] = vet2[i];
 			// System.out.println(" " + vet1[i]);
 		}
 		// System.out.println("Vetor 4 desordenado");
 		for (i = 0; i < tv; i++) {
 			vet3[i] = gerador.nextInt(tv);
+			vetD[i] = vet3[i];
 			// System.out.println(" " + vet1[i]);
 		}
 		// System.out.println("Vetor 5 desordenado");
 		for (i = 0; i < tv; i++) {
 			vet4[i] = gerador.nextInt(tv);
-			// System.out.println(" " + vet1[i]);
-		}
-
-		for (i = 0; i < tv; i++) {
-			vetA[i] = vet0[i];
-			vetB[i] = vet1[i];
-			vetC[i] = vet2[i];
-			vetD[i] = vet3[i];
 			vetE[i] = vet4[i];
-
+			// System.out.println(" " + vet1[i]);
 		}
 
 		// quick
@@ -322,8 +319,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet0[i]);
 		}
-		// System.out.println("Vetor 1 ordenado por quick demorou: " + fim1 +
-		// " mili segundos");
+		System.out.println("Vetor 1 ordenado por quick demorou: " + fim1 + " mili segundos");
 
 		long inicio2 = System.currentTimeMillis();
 		quick(0, tv - 1, vet1);
@@ -332,8 +328,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet0[i]);
 		}
-		// System.out.println("Vetor 2 ordenado por quick demorou: " + fim2 +
-		// " mili segundos");
+		System.out.println("Vetor 2 ordenado por quick demorou: " + fim2 + " mili segundos");
 
 		long inicio3 = System.currentTimeMillis();
 		quick(0, tv - 1, vet2);
@@ -342,8 +337,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet0[i]);
 		}
-		// System.out.println("Vetor 3 ordenado por quick na demorou: " + fim3 +
-		// " mili segundos");
+		System.out.println("Vetor 3 ordenado por quick na demorou: " + fim3 + " mili segundos");
 
 		long inicio4 = System.currentTimeMillis();
 		quick(0, tv - 1, vet3);
@@ -352,8 +346,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet0[i]);
 		}
-		// System.out.println("Vetor 4 ordenado por quick demorou: " + fim4 +
-		// " mili segundos");
+		System.out.println("Vetor 4 ordenado por quick demorou: " + fim4 + " mili segundos");
 
 		long inicio5 = System.currentTimeMillis();
 
@@ -363,8 +356,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet0[i]);
 		}
-		// System.out.println("Vetor 5 ordenado por quick demorou: " + fim5 +
-		// " mili segundos");
+		System.out.println("Vetor 5 ordenado por quick demorou: " + fim5 + " mili segundos");
 
 		med1 = (fim1 + fim2 + fim3 + fim4 + fim5) / 5;
 
@@ -387,8 +379,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet0[i]);
 		}
-		// System.out.println("Vetor 1 ordenado por seldir demorou: " + fim1 +
-		// " mili segundos");
+		System.out.println("Vetor 1 ordenado por seldir demorou: " + fim1 + " mili segundos");
 
 		inicio2 = System.currentTimeMillis();
 		seldir(0, tv - 1, vet1);
@@ -397,8 +388,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet1[i]);
 		}
-		// System.out.println("Vetor 2 ordenado por seldir demorou: " + fim2 +
-		// " mili segundos");
+		System.out.println("Vetor 2 ordenado por seldir demorou: " + fim2 + " mili segundos");
 
 		inicio3 = System.currentTimeMillis();
 		seldir(0, tv - 1, vet2);
@@ -407,8 +397,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet2[i]);
 		}
-		// System.out.println("Vetor 3 ordenado por seldir demorou: " + fim3 +
-		// " mili segundos");
+		System.out.println("Vetor 3 ordenado por seldir demorou: " + fim3 + " mili segundos");
 
 		inicio4 = System.currentTimeMillis();
 		seldir(0, tv - 1, vet3);
@@ -417,8 +406,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet3[i]);
 		}
-		// System.out.println("Vetor 4 ordenado por seldir demorou: " + fim4 +
-		// " mili segundos");
+		System.out.println("Vetor 4 ordenado por seldir demorou: " + fim4 + " mili segundos");
 
 		inicio5 = System.currentTimeMillis();
 		seldir(0, tv - 1, vet4);
@@ -427,8 +415,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet4[i]);
 		}
-		// System.out.println("Vetor 5 ordenado por seldir demorou: " + fim5 +
-		// " mili segundos");
+		System.out.println("Vetor 5 ordenado por seldir demorou: " + fim5 + " mili segundos");
 
 		med2 = (fim1 + fim2 + fim3 + fim4 + fim5) / 5;
 
@@ -451,8 +438,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet0[i]);
 		}
-		// System.out.println("Vetor 1 ordenado por bubble demorou: " + fim1 +
-		// " mili segundos");
+		System.out.println("Vetor 1 ordenado por bubble demorou: " + fim1 + " mili segundos");
 
 		inicio2 = System.currentTimeMillis();
 		bubble(0, tv - 1, vet1);
@@ -461,8 +447,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet1[i]);
 		}
-		// System.out.println("Vetor 2 ordenado por bubble demorou: " + fim2 +
-		// " mili segundos");
+		System.out.println("Vetor 2 ordenado por bubble demorou: " + fim2 + " mili segundos");
 
 		inicio3 = System.currentTimeMillis();
 		bubble(0, tv - 1, vet2);
@@ -471,8 +456,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet2[i]);
 		}
-		// System.out.println("Vetor 3 ordenado por bubble demorou: " + fim3 +
-		// " mili segundos");
+		System.out.println("Vetor 3 ordenado por bubble demorou: " + fim3 + " mili segundos");
 
 		inicio4 = System.currentTimeMillis();
 		bubble(0, tv - 1, vet3);
@@ -481,8 +465,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet3[i]);
 		}
-		// System.out.println("Vetor 4 ordenado por bubble demorou: " + fim4 +
-		// " mili segundos");
+		System.out.println("Vetor 4 ordenado por bubble demorou: " + fim4 + " mili segundos");
 
 		inicio5 = System.currentTimeMillis();
 		bubble(0, tv - 1, vet4);
@@ -491,8 +474,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet4[i]);
 		}
-		// System.out.println("Vetor 5 ordenado por bubble demorou: " + fim5 +
-		// " mili segundos");
+		System.out.println("Vetor 5 ordenado por bubble demorou: " + fim5 + " mili segundos");
 
 		med3 = (fim1 + fim2 + fim3 + fim4 + fim5) / 5;
 
@@ -515,8 +497,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet0[i]);
 		}
-		// System.out.println("Vetor 1 ordenado por shake demorou: " + fim1 +
-		// " mili segundos");
+		System.out.println("Vetor 1 ordenado por shake demorou: " + fim1 + " mili segundos");
 
 		inicio2 = System.currentTimeMillis();
 		shake(0, tv - 1, vet1);
@@ -525,8 +506,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet1[i]);
 		}
-		// System.out.println("Vetor 2 ordenado por shake demorou: " + fim2 +
-		// " mili segundos");
+		System.out.println("Vetor 2 ordenado por shake demorou: " + fim2 + " mili segundos");
 
 		inicio3 = System.currentTimeMillis();
 		shake(0, tv - 1, vet2);
@@ -535,8 +515,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet2[i]);
 		}
-		// System.out.println("Vetor 3 ordenado por shake demorou: " + fim3 +
-		// " mili segundos");
+		System.out.println("Vetor 3 ordenado por shake demorou: " + fim3 + " mili segundos");
 
 		inicio4 = System.currentTimeMillis();
 		shake(0, tv - 1, vet3);
@@ -545,8 +524,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet3[i]);
 		}
-		// System.out.println("Vetor 4 ordenado por shake demorou: " + fim4 +
-		// " mili segundos");
+		System.out.println("Vetor 4 ordenado por shake demorou: " + fim4 + " mili segundos");
 
 		inicio5 = System.currentTimeMillis();
 		shake(0, tv - 1, vet4);
@@ -555,8 +533,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet4[i]);
 		}
-		// System.out.println("Vetor 5 ordenado por shake demorou: " + fim5 +
-		// " mili segundos");
+		System.out.println("Vetor 5 ordenado por shake demorou: " + fim5 + " mili segundos");
 
 		med4 = (fim1 + fim2 + fim3 + fim4 + fim5) / 5;
 
@@ -579,8 +556,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet0[i]);
 		}
-		// System.out.println("Vetor 1 ordenado por heapSort demorou: " + fim1 +
-		// " mili segundos");
+		System.out.println("Vetor 1 ordenado por heapSort demorou: " + fim1 + " mili segundos");
 
 		inicio2 = System.currentTimeMillis();
 		heapSort(vet1, tv);
@@ -589,8 +565,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet1[i]);
 		}
-		// System.out.println("Vetor 2 ordenado por heapSort demorou: " + fim2 +
-		// " mili segundos");
+		System.out.println("Vetor 2 ordenado por heapSort demorou: " + fim2 + " mili segundos");
 
 		inicio3 = System.currentTimeMillis();
 		heapSort(vet2, tv);
@@ -599,8 +574,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet2[i]);
 		}
-		// System.out.println("Vetor 3 ordenado por heapSort demorou: " + fim3 +
-		// " mili segundos");
+		System.out.println("Vetor 3 ordenado por heapSort demorou: " + fim3 + " mili segundos");
 
 		inicio4 = System.currentTimeMillis();
 		heapSort(vet3, tv);
@@ -609,8 +583,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet3[i]);
 		}
-		// System.out.println("Vetor 4 ordenado por heapSort demorou: " + fim4 +
-		// " mili segundos");
+		System.out.println("Vetor 4 ordenado por heapSort demorou: " + fim4 + " mili segundos");
 
 		inicio5 = System.currentTimeMillis();
 		heapSort(vet4, tv);
@@ -619,8 +592,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet4[i]);
 		}
-		// System.out.println("Vetor 5 ordenado por heapSort demorou: " + fim5 +
-		// " mili segundos");
+		System.out.println("Vetor 5 ordenado por heapSort demorou: " + fim5 + " mili segundos");
 
 		med5 = (fim1 + fim2 + fim3 + fim4 + fim5) / 5;
 
@@ -643,8 +615,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet0[i]);
 		}
-		// System.out.println("Vetor 1 ordenado por mergeSort demorou: " + fim1
-		// + " mili segundos");
+		System.out.println("Vetor 1 ordenado por mergeSort demorou: " + fim1 + " mili segundos");
 
 		inicio2 = System.currentTimeMillis();
 		mergeSort(vet1, 0, tv - 1);
@@ -653,8 +624,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet1[i]);
 		}
-		// System.out.println("Vetor 2 ordenado por mergeSort demorou: " + fim2
-		// + " mili segundos");
+		System.out.println("Vetor 2 ordenado por mergeSort demorou: " + fim2 + " mili segundos");
 
 		inicio3 = System.currentTimeMillis();
 		mergeSort(vet2, 0, tv - 1);
@@ -663,8 +633,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet2[i]);
 		}
-		// System.out.println("Vetor 3 ordenado por mergeSort demorou: " + fim3
-		// + " mili segundos");
+		System.out.println("Vetor 3 ordenado por mergeSort demorou: " + fim3 + " mili segundos");
 
 		inicio4 = System.currentTimeMillis();
 		mergeSort(vet3, 0, tv - 1);
@@ -673,8 +642,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet3[i]);
 		}
-		// System.out.println("Vetor 4 ordenado por mergeSort demorou: " + fim4
-		// + " mili segundos");
+		System.out.println("Vetor 4 ordenado por mergeSort demorou: " + fim4 + " mili segundos");
 
 		inicio5 = System.currentTimeMillis();
 		mergeSort(vet4, 0, tv - 1);
@@ -683,8 +651,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet4[i]);
 		}
-		// System.out.println("Vetor 5 ordenado por mergeSort demorou: " + fim5
-		// + " mili segundos");
+		System.out.println("Vetor 5 ordenado por mergeSort demorou: " + fim5 + " mili segundos");
 
 		med6 = (fim1 + fim2 + fim3 + fim4 + fim5) / 5;
 
@@ -707,8 +674,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet0[i]);
 		}
-		// System.out.println("Vetor 1 ordenado por radixsort demorou: " + fim1
-		// + " mili segundos");
+		System.out.println("Vetor 1 ordenado por radixsort demorou: " + fim1 + " mili segundos");
 
 		inicio2 = System.currentTimeMillis();
 		radixsort(vet1, tv);
@@ -717,8 +683,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet1[i]);
 		}
-		// System.out.println("Vetor 2 ordenado por radixsort demorou: " + fim2
-		// + " mili segundos");
+		System.out.println("Vetor 2 ordenado por radixsort demorou: " + fim2 + " mili segundos");
 
 		inicio3 = System.currentTimeMillis();
 		radixsort(vet2, tv);
@@ -727,8 +692,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet2[i]);
 		}
-		// System.out.println("Vetor 3 ordenado por radixsort demorou: " + fim3
-		// + " mili segundos");
+		System.out.println("Vetor 3 ordenado por radixsort demorou: " + fim3 + " mili segundos");
 
 		inicio4 = System.currentTimeMillis();
 		radixsort(vet3, tv);
@@ -737,8 +701,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet3[i]);
 		}
-		// System.out.println("Vetor 4 ordenado por radixsort demorou: " + fim4
-		// + " mili segundos");
+		System.out.println("Vetor 4 ordenado por radixsort demorou: " + fim4 + " mili segundos");
 
 		inicio5 = System.currentTimeMillis();
 		radixsort(vet4, tv);
@@ -747,8 +710,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet4[i]);
 		}
-		// System.out.println("Vetor 5 ordenado por radixsort demorou: " + fim5
-		// + " mili segundos");
+		System.out.println("Vetor 5 ordenado por radixsort demorou: " + fim5 + " mili segundos");
 
 		med7 = (fim1 + fim2 + fim3 + fim4 + fim5) / 5;
 
@@ -771,8 +733,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet0[i]);
 		}
-		// System.out.println("Vetor 1 ordenado por insertionSort demorou: " +
-		// fim1 + " mili segundos");
+		System.out.println("Vetor 1 ordenado por insertionSort demorou: " + fim1 + " mili segundos");
 
 		inicio2 = System.currentTimeMillis();
 		insertionSort(vet1, tv);
@@ -781,8 +742,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet1[i]);
 		}
-		// System.out.println("Vetor 2 ordenado por insertionSort demorou: " +
-		// fim2 + " mili segundos");
+		System.out.println("Vetor 2 ordenado por insertionSort demorou: " + fim2 + " mili segundos");
 
 		inicio3 = System.currentTimeMillis();
 		insertionSort(vet2, tv);
@@ -791,8 +751,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet2[i]);
 		}
-		// System.out.println("Vetor 3 ordenado por insertionSort demorou: " +
-		// fim3 + " mili segundos");
+		System.out.println("Vetor 3 ordenado por insertionSort demorou: " + fim3 + " mili segundos");
 
 		inicio4 = System.currentTimeMillis();
 		insertionSort(vet3, tv);
@@ -801,8 +760,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet3[i]);
 		}
-		// System.out.println("Vetor 4 ordenado por insertionSort demorou: " +
-		// fim4 + " mili segundos");
+		System.out.println("Vetor 4 ordenado por insertionSort demorou: " + fim4 + " mili segundos");
 
 		inicio5 = System.currentTimeMillis();
 		insertionSort(vet4, tv);
@@ -811,8 +769,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet4[i]);
 		}
-		// System.out.println("Vetor 5 ordenado por insertionSort demorou: " +
-		// fim5 + " mili segundos");
+		System.out.println("Vetor 5 ordenado por insertionSort demorou: " + fim5 + " mili segundos");
 
 		med8 = (fim1 + fim2 + fim3 + fim4 + fim5) / 5;
 
@@ -835,8 +792,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet0[i]);
 		}
-		// System.out.println("Vetor 1 ordenado por shellSort demorou: " + fim1
-		// + " mili segundos");
+		System.out.println("Vetor 1 ordenado por shellSort demorou: " + fim1 + " mili segundos");
 
 		inicio2 = System.currentTimeMillis();
 		shellSort(vet1, tv);
@@ -845,8 +801,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet1[i]);
 		}
-		// System.out.println("Vetor 2 ordenado por shellSort demorou: " + fim2
-		// + " mili segundos");
+		System.out.println("Vetor 2 ordenado por shellSort demorou: " + fim2 + " mili segundos");
 
 		inicio3 = System.currentTimeMillis();
 		shellSort(vet2, tv);
@@ -855,8 +810,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet2[i]);
 		}
-		// System.out.println("Vetor 3 ordenado por shellSort demorou: " + fim3
-		// + " mili segundos");
+		System.out.println("Vetor 3 ordenado por shellSort demorou: " + fim3 + " mili segundos");
 
 		inicio4 = System.currentTimeMillis();
 		shellSort(vet3, tv);
@@ -865,8 +819,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet3[i]);
 		}
-		// System.out.println("Vetor 4 ordenado por shellSort demorou: " + fim4
-		// + " mili segundos");
+		System.out.println("Vetor 4 ordenado por shellSort demorou: " + fim4 + " mili segundos");
 
 		inicio5 = System.currentTimeMillis();
 		shellSort(vet4, tv);
@@ -875,8 +828,7 @@ public class exer1 {
 		for (i = 0; i < tv; i++) {
 			// System.out.println(" " + vet4[i]);
 		}
-		// System.out.println("Vetor 5 ordenado por shellSort demorou: " + fim5
-		// + " mili segundos");
+		System.out.println("Vetor 5 ordenado por shellSort demorou: " + fim5 + " mili segundos");
 
 		med9 = (fim1 + fim2 + fim3 + fim4 + fim5) / 5;
 
