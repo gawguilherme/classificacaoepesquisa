@@ -35,6 +35,7 @@ public class exer1 {
 	private static int parte2(int inicio, int fim, String[] vet1, long[] vet2) {
 		int i = inicio, f = fim, pos = 0;
 		long chave = vet2[inicio];
+		String teste = vet1[inicio];
 		boolean volta = true;
 
 		while (i < f) {
@@ -60,6 +61,7 @@ public class exer1 {
 		}
 		pos = i;
 		vet2[pos] = chave;
+		vet1[pos] = teste;
 		return pos;
 	}
 
