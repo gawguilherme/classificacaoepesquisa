@@ -50,7 +50,7 @@ public class shellsort {
 			System.out.println(" " + vet[i]);
 		}
 		
-		//insertionSort (vet, tv);
+		insertionSort (vet, tv);
 		shellSort (vet, tv);
 
 		System.out.println("Vetor ordenado");
